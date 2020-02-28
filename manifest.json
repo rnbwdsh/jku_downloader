@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "JKU-Tube Downloader",
+  "version": "1.0",
+  "description": "Adds a download link to moodle videos, you can open with VLC.",
+  "icons": { "96": "icon.png" },
+  "content_scripts": [ {
+      "matches": ["*://moodle.jku.at/jku/mod/streamurl/view.php*"],
+      "js": ["inject.js"]
+    } ],
+
+  "applications": { "gecko": { "id": "download@jku.at"    }  }
+}
