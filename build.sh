@@ -1,0 +1,1 @@
+zip addon.xpi 48.png 96.png manifest.json inject.js
